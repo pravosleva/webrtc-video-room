@@ -8,7 +8,7 @@
     "url": "https://github.com/dondido/webrtc-video-room.git"
   },
   "scripts": {
-    "start:pm2": "pm2 start npm --name webrtc-3000 -- run start",
+    "start:pm2": "NODE_ENV=production pm2 start npm --name webrtc-3000 -- run start",
     "start": "node server.js",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
